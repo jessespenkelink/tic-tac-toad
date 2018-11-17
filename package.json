@@ -1,0 +1,14 @@
+{
+  "name": "tictactoe",
+  "version": "1.0.0",
+  "description": "Tic tac toe game with unbeatable AI opponent",
+  "main": "server.js",
+  "author": "Jesse & Max",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "http-server ./src -p 3000"
+  },
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}

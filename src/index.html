@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tic tac toad</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="title">Tic tac toad *insert toad noise here*</h1>
+            <div class="flex-container">
+                <div id="grid-container" class="grid-container"></div>
+                <div id="settings-container" class="settings-container">
+                    <form id="settings-form">
+                        <h2>Grid size</h2>
+                        <div class="input-container">
+                            <label for="grid-width">Width</label>
+                            <input name="grid-width" id="grid-width" type="number">
+                        </div>
+                        <div class="input-container">
+                            <label for="grid-height">Height</label>
+                            <input name="grid-height" id="grid-height" type="number">
+                        </div>
+                        <h2>Number of X/O in a row to win</h2>
+                        <div class="input-container">
+                            <label for="number-to-win">Number</label>
+                            <input name="number-to-win" id="number-to-win" type="number">
+                        </div>
+                        <button>Apply settings</button>
+                        <button id="toggle-background-sound">Toggle background sound</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <audio id="background-sound" autoplay loop>
+            <source src="assets/audio/toads.mp3" type="audio/mp3">
+        </audio>
+        <audio id="click-sound">
+            <source src="assets/audio/toad.mp3" type="audio/mp3">
+        </audio>
+        <script src="index.js"></script>
+    </body>
+</html>

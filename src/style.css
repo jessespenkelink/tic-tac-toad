@@ -1,0 +1,72 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Helvetica';
+}
+
+h1 {
+    transition: 1s ease-in-out;
+}
+
+.container {
+
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.settings-container {
+    background: hotpink;
+    color: white;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 40px;
+    z-index: 1;
+    transition: 1s ease-in-out;
+}
+.grid-container {
+    padding-right: 300px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.input-container label {
+    padding-right: 25px;
+    align-self: center;
+}
+.input-container input[type=number] {
+    width: 100px;
+    align-self: center;
+}
+
+button {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    top: 10px;
+}
+
+table tr td {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    max-height: 50px;
+    max-width: 50px;
+    border: 1px solid black;
+}
+
+table tr td.chosen {
+    background-size: cover;
+    background-position: center;
+}
